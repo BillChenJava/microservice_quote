@@ -21,7 +21,6 @@ public class QuotesController {
 
     @RequestMapping(value="/get/{username}", method= RequestMethod.GET)
     public List<String> getQuotes(@PathVariable("username") final String username){
-        System.out.println("abc");
         return getQuotesByUsername(username);
     }
 
